@@ -1,11 +1,20 @@
 import React from "react";
+import { useState } from "react";
 import { View, Text, StyleSheet, TextInput } from "react-native";
 
-const SearchBar: React.FC = () => {
+type searchBarProps = {
+    setData: string
+}
 
+const SearchBar: React.FC = (data: string) => {
+    const [user, setUser] = useState(data)
     return (
         <View style={styles.container}>
-            <TextInput placeholder="Search" clearButtonMode="always" style={styles.textArea}/>  
+            <TextInput placeholder="Search" clearButtonMode="always" style={styles.textArea}
+            value={user}
+            onChangeText={user => setUser(user)}
+            
+            />  
         </View>
     )
 }
@@ -20,6 +29,7 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         marginTop: 28,
         marginBottom: 10,
+      
         
        
         
