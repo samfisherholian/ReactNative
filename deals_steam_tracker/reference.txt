@@ -1,0 +1,25 @@
+utilização de filtros
+https://www.dhiwise.com/post/reactjs-filter-array-of-objects-effortless-data-handling
+https://aboutreact.com/react-native-search-bar-filter-on-listview/
+https://www.youtube.com/watch?v=PD61Grw6HlY
+
+utilizando para fazer aparecer todos os conteudos do flatlist na tela
+https://stackoverflow.com/questions/69585468/flatlist-exceeds-its-container-with-its-content-how-to-make-flatlist-with-fixed
+https://reactnative.dev/docs/flatlist
+
+saber como funciona o usereffect
+https://react.dev/reference/react/useEffect
+https://www.reddit.com/r/react/comments/tivs7z/understanding_useeffect/?rdt=43491#:~:text=useEffect%20runs%20after%20each%20render,only%20called%20in%20specific%20situations.
+
+regex
+https://regexr.com/
+https://uibakery.io/regex-library/numbers-only
+
+renerização condicional
+https://legacy.reactjs.org/docs/conditional-rendering.html
+https://www.dhiwise.com/post/how-to-use-the-ternary-operator-in-react-for-cleaner-code
+
+
+
+
+
