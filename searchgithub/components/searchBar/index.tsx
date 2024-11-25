@@ -2,38 +2,33 @@ import React from "react";
 import { useState } from "react";
 import { View, Text, StyleSheet, TextInput } from "react-native";
 
-type searchBarProps = {
-    setData: string
+type SearchProps = {
+    onSearch: (query: string) => void;
+    onSubmit: () => void;
 }
 
-const SearchBar: React.FC = (data: string) => {
-    const [user, setUser] = useState(data)
+const SearchBar: React.FC = ({onSearch, onSubmit}: SearchProps) => {
+
+    function handleInput(data: string){
+        onSearch(data)
+    }
+
+    function handleSubmit(){
+        onSubmit()
+    }
+
     return (
-        <View style={styles.container}>
+        
             <TextInput placeholder="Search" clearButtonMode="always" style={styles.textArea}
-            value={user}
-            onChangeText={user => setUser(user)}
-            
+            onChangeText={handleInput}
+            onSubmitEditing={handleSubmit}            
             />  
-        </View>
+        
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        display: 'flex',
-        
-        marginRight: 5,
-        marginLeft: 5,
-        borderRadius: 8,
-        marginTop: 28,
-        marginBottom: 10,
-      
-        
-       
-        
-    },
+
     textArea:{
         paddingHorizontal: 20,
         paddingVertical: 10,
